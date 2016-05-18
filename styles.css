@@ -48,45 +48,135 @@ table {
 }
 
 /* Start! */
+body {
+	font-family: 'Dosis', sans-serif;
+	background-color: #35586C;
+}
 .container {
 	max-width: 1500px;
 }
 
 /* Getting that line */
 
-.line:before {
+.line:before{
 	content: '';
-	display:inline-block;
 	position: absolute;
 	top: 25px;
 	bottom: 25px;
 	width: 10px;
-	background:black;
+	background:#6cbfee;
 	left: 185px;
 	margin-left: -10px;
-	z-index: -1;
+	border-radius: 2px;
+	max-height: 508px;
+	z-index: -2;
+
 }
 .fa-video-camera{
 	position: relative;
-	z-index: 1;
+	top: 29px;
+	bottom: 25px;
+	left: 175px;
+	margin-left:-10px;
+	color: white;
+	border: 1px none #6cbfee;
+	padding:8px 8px;
+	border-radius: 50px;
+	background-color: #3594cb;
+	height: 15px;
+	width: 15px;
+	z-index: -1;
+	/* I found this on her page,
+	I dont understand why it works and the
+	code I had didnt but the stuff I was
+	trying is commented out below */
+	box-shadow: 0 0 0 10px #6cbfee;
+}
+
+/*
+.fa-video-camera:after {
+	content: '';
+	position: absolute;
+	top: -4px;
+	bottom: 25px;
+	left: 6px;
+	margin-left: -10px;
+	color: #6cbfee;
+	padding: 10px;
+	height: 20px;
+	width:20px;
+	background-color: #6cbfee;
+	border-radius: 50px;
+	z-index: -15;
+
+}
+
+
+.backcircle {
+	position: relative;
+	z-index: -1;
 	top: 23px;
 	bottom: 25px;
 	left: 175px;
 	margin-left:-10px;
 	color: blue;
 	border: 1px solid grey;
+	padding:15px 15px;
+	border-radius: 50px;
+	background-color: black;
+	width:25px;
+	height:25px
+
+}
+*/
+
+.fa-trophy {
+	position: relative;
+	z-index: 1;
+	top: 208px;
+	bottom: 25px;
+	left: 150px;
+	margin-left:-10px;
+	color: white;
+	border: 1px none #6cbfee;
 	padding:8px 8px;
 	border-radius: 50px;
-	background-color: grey;
+	background-color: #3594cb;
+	box-shadow: 0 0 0 10px #6cbfee;
+
 }
-.backcircle {
+.fa-american-sign-language-interpreting {
 	position: relative;
-	z-index: 0;
-	top: 23px;
+	z-index: 1;
+	top: 383px;
 	bottom: 25px;
-	left: 154px;
-	margin-left: -10px;
+	left: 123px;
+	margin-left:-10px;
+	color: white;
+	border: 1px none #6cbfee;
+	padding:8px 8px;
+	border-radius: 50px;
+	background-color: #3594cb;
+	box-shadow: 0 0 0 10px #6cbfee;
+
 }
+/*.fa-trophy:after {
+	content: '';
+	position: absolute;
+	top: 15px;
+	bottom: 25px;
+	left: 6px;
+	margin-left: -10px;
+	color: #6cbfee;
+	padding: 10px;
+	height: 20px;
+	width:20px;
+	background-color: #6cbfee;
+	border-radius: 50px;
+	z-index: -15;
+
+}
+*/
 
 #parent {
 	position: relative;
@@ -96,6 +186,7 @@ table {
 /* left box */
 #leftbox {
 	left: 45px;
+	top: -25px
 
 }
 
@@ -112,46 +203,100 @@ table {
 }
 #leftbox2 {
 	left: 45px;
+	top: -25px;
 }
 #rightbox2 {
+	right: 400px;
+}
+#parent3 {
+	position: relative;
+	top: 375px;
+}
+
+/* left box */
+#leftbox3 {
+	left: 45px;
+	top: -25px
+
+}
+#rightbox3 {
+	right: 400px;
+}
+
+/* right box*/
+
+#rightbox3 {
 	right: 400px;
 }
 
 /* Content styles right box */
 
-.eventblock {
+.eventblockodd {
 	position: absolute;
 	width: 450px;
-	border: 2px solid black;
-	top: -25px
+	border: 2px none;
+	border-radius: 10px;
+	top: -25px;
+	background-color: #6cbfee;
+}
+.eventblockodd:before {
+	position: relative;
+	width: 0;
+	height: 0;
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+	border-right: 10px solid black;
+	z-index: 50;
+
+}
+.eventblockeven {
+	position: absolute;
+	width: 450px;
+	border: 2px none;
+	border-radius: 10px;
+	top: -25px;
+	background-color: #3594cb;
 }
 .eventTitle {
-	padding: 2px 4px;
-	font-size: 24px;
+	padding: 15px 55px 5px 55px;
+	font-size: 32px;
 	position:relative;
 	z-index: 1;
-	text-align: center;
+	text-align: left;
+	color: white;
+	font-weight: 700;
 }
 .eventTitle:before {
 	content:"";
 	position:absolute;
-	left: 112.5px;
+	left: 56.25px;
 	bottom: 0;
 	height: 1px;
-	width: 50%;
-	border-bottom: 2px solid grey;
-
+	width: 75%;
+	border-bottom: 2px solid white;
+	opacity: .25;
 }
 .event {
-	font-size: 10px;
-	padding: 2px 12px;
+	font-size: 16px;
+	padding: 20px 12px 30px 55px;
+	color: white;
 }
 /* Content styles left box */
 
 .date {
-	position: absolute;;
-	padding-top: 15px
+	position: absolute;
+	padding-top: 26px;
+	font-size: 16px;
+	color: lightgrey;
 }
-.time{
-	position: absolute;;
+.timeodd{
+	position: absolute;
+	font-size: 24px;
+	color: #6cbfee;
+
+}
+.timeeven{
+	position: absolute;
+	font-size: 24px;
+	color: #3594cb;
 }
