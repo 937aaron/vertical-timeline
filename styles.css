@@ -61,20 +61,20 @@ body {
 .line:before{
 	content: '';
 	position: absolute;
-	top: 25px;
-	bottom: 25px;
+	top: 30px;
+	bottom: 30px;
 	width: 10px;
 	background:#6cbfee;
 	left: 185px;
 	margin-left: -10px;
 	border-radius: 2px;
-	max-height: 508px;
+	max-height: 520px;
 	z-index: -2;
 
 }
 .fa-video-camera{
 	position: relative;
-	top: 29px;
+	top: 40px;
 	bottom: 25px;
 	left: 175px;
 	margin-left:-10px;
@@ -133,7 +133,7 @@ body {
 .fa-trophy {
 	position: relative;
 	z-index: 1;
-	top: 208px;
+	top: 245px;
 	bottom: 25px;
 	left: 150px;
 	margin-left:-10px;
@@ -148,7 +148,7 @@ body {
 .fa-american-sign-language-interpreting {
 	position: relative;
 	z-index: 1;
-	top: 383px;
+	top: 407px;
 	bottom: 25px;
 	left: 123px;
 	margin-left:-10px;
@@ -238,17 +238,23 @@ body {
 	border-radius: 10px;
 	top: -25px;
 	background-color: #6cbfee;
+	padding-top: 0px;
 }
-.eventblockodd:before {
+
+.triangle{
 	position: relative;
 	width: 0;
 	height: 0;
 	border-top: 10px solid transparent;
 	border-bottom: 10px solid transparent;
-	border-right: 10px solid black;
+	border-right: 10px solid #6cbfee;
 	z-index: 50;
+	padding: 0;
+	left: 266px;
+	top: -12px;
 
 }
+
 .eventblockeven {
 	position: absolute;
 	width: 450px;
