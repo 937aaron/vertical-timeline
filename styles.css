@@ -68,7 +68,7 @@ body {
 	left: 185px;
 	margin-left: -10px;
 	border-radius: 2px;
-	max-height: 520px;
+	max-height: 540px;
 	z-index: -2;
 
 }
@@ -133,7 +133,7 @@ body {
 .fa-trophy {
 	position: relative;
 	z-index: 1;
-	top: 245px;
+	top: 215px;
 	bottom: 25px;
 	left: 150px;
 	margin-left:-10px;
@@ -148,7 +148,7 @@ body {
 .fa-american-sign-language-interpreting {
 	position: relative;
 	z-index: 1;
-	top: 407px;
+	top: 390px;
 	bottom: 25px;
 	left: 123px;
 	margin-left:-10px;
@@ -193,7 +193,7 @@ body {
 /* right box*/
 
 #rightbox {
-	right: 400px;
+	right: 458px;
 }
 /* second set of boxes */
 
@@ -206,7 +206,7 @@ body {
 	top: -25px;
 }
 #rightbox2 {
-	right: 400px;
+	right: 458px;
 }
 #parent3 {
 	position: relative;
@@ -219,14 +219,11 @@ body {
 	top: -25px
 
 }
-#rightbox3 {
-	right: 400px;
-}
 
 /* right box*/
 
 #rightbox3 {
-	right: 400px;
+	right: 458px;
 }
 
 /* Content styles right box */
@@ -241,19 +238,7 @@ body {
 	padding-top: 0px;
 }
 
-.triangle{
-	position: relative;
-	width: 0;
-	height: 0;
-	border-top: 10px solid transparent;
-	border-bottom: 10px solid transparent;
-	border-right: 10px solid #6cbfee;
-	z-index: 50;
-	padding: 0;
-	left: 266px;
-	top: -12px;
 
-}
 
 .eventblockeven {
 	position: absolute;
