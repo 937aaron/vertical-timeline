@@ -52,8 +52,26 @@ body {
 	font-family: 'Dosis', sans-serif;
 	background-color: #35586C;
 }
+/* Headers */
+.copy {
+	padding: 20px 2px 0px 2px;
+	color: #fff;
+	font-size: 20px;
+	margin-left: 45px;
+
+}
+.headtitle{
+	padding: 2px 2px 10px 2px;
+	color: #fff;
+	font-size: 26px;
+	margin-left: 45px;
+
+}
+
+/* Timeline */
+
 .container {
-	max-width: 1500px;
+	max-width: 2700px;
 }
 
 /* Getting that line */
@@ -61,14 +79,14 @@ body {
 .line:before{
 	content: '';
 	position: absolute;
-	top: 30px;
+	top: 110px;
 	bottom: 30px;
 	width: 10px;
 	background:#6cbfee;
 	left: 185px;
 	margin-left: -10px;
 	border-radius: 2px;
-	max-height: 505px;
+	max-height: 490px;
 	z-index: -2;
 
 }
@@ -193,7 +211,7 @@ body {
 /* right box*/
 
 #rightbox {
-	right: 458px;
+	right: 300px;
 }
 /* second set of boxes */
 
@@ -206,7 +224,7 @@ body {
 	top: -25px;
 }
 #rightbox2 {
-	right: 458px;
+	right: 300px;
 }
 #parent3 {
 	position: relative;
@@ -223,14 +241,14 @@ body {
 /* right box*/
 
 #rightbox3 {
-	right: 458px;
+	right: 300px;
 }
 
 /* Content styles right box */
 
 .eventblockodd {
 	position: absolute;
-	width: 450px;
+	width: 550px;
 	border: 2px none;
 	border-radius: 10px;
 	top: -25px;
@@ -242,15 +260,25 @@ body {
 
 .eventblockeven {
 	position: absolute;
-	width: 450px;
+	width: 550px;
 	border: 2px none;
 	border-radius: 10px;
 	top: -25px;
 	background-color: #3594cb;
 }
+/* last attempt at making the carrot
+.eventblockeven:after {
+	width: 0;
+	height: 0;
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+	border-right: 10px solid black;
+}
+*/
+
 .eventTitle {
 	padding: 15px 55px 5px 55px;
-	font-size: 32px;
+	font-size: 36px;
 	position:relative;
 	z-index: 1;
 	text-align: left;
@@ -276,18 +304,18 @@ body {
 
 .date {
 	position: absolute;
-	padding-top: 26px;
+	padding-top: 37px;
 	font-size: 16px;
 	color: lightgrey;
 }
 .timeodd{
 	position: absolute;
-	font-size: 24px;
+	font-size: 34px;
 	color: #6cbfee;
 
 }
 .timeeven{
 	position: absolute;
-	font-size: 24px;
+	font-size: 34px;
 	color: #3594cb;
 }
